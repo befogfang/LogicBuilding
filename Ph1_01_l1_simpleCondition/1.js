@@ -1,0 +1,1 @@
+// take a number and print if its negative , positive or zero 
