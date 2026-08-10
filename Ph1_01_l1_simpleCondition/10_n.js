@@ -1,0 +1,1 @@
+// take  a character and check weather if it's uppercase , lowercase , a digit or a special character

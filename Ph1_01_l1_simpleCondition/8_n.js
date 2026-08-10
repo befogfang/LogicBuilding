@@ -1,0 +1,1 @@
+//take a tempreature and tell weather it' cold / warm / hot
