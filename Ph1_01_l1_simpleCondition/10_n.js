@@ -15,12 +15,22 @@ function tellWhatsthis(s){
 let value = s.charCodeAt(0)
 console.log(value)
 
-if (value>65 && value<90){
+if (value>64 && value<91){
     console.log("Uppercase")
-} else {
+} else if(value>96 && value<123 ){
+console.log("LowerCase")
+}else if(value>47 && value<90){
+console.log("Digit")
+}else if(value>31 && value<48){
+console.log("Special charcter")
+}
+ else {
     console.log("not uppercase")
 }
     
 }
 
 tellWhatsthis("t")
+tellWhatsthis("@")
+tellWhatsthis("T")
+tellWhatsthis("6")
