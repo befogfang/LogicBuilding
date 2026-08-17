@@ -11,16 +11,16 @@
  */
 
 function whatTriangle(tSide) {
-    let stSide = tSide.sort((a,b)=>a-b)
-    if ( !(stSide[0]+stSide[1]> stSide[2]) ) {
-        console.log("cannot form a triangle with these side with sides "+stSide)
+    let s = tSide.sort((a,b)=>a-b)
+    if ( !(s[0]+s[1]> s[2]) ) {
+        console.log("cannot form a triangle with these side with sides "+s)
     } else{
-        if ((stSide[0]==stSide[1]==stSide[2])) {
-            console.log("this is An Eqilateral Tringle with sides " +stSide)
-        } else if ((stSide[0]==stSide[1])||(stSide[1]==stSide[2])||(stSide[2]==stSide[0])) {
-            console.log("this is issocelese triangle with sides " +stSide)
-        }else{
-            console.log("this is scelene Triangle with sides "+ stSide)
+        if ((s[0]==s[1])&&(s[1]==s[2])) {
+            console.log("this is An Eqilateral Tringle with sides " +s)
+        } else if ((s[0]==s[1])||(s[1]==s[2])) {
+            console.log("this is issocelese triangle with sides " +s)
+        }else {
+            console.log("this is scelene Triangle with sides "+ s)
         }
     }
 }
