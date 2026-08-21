@@ -6,35 +6,35 @@ const marks = process.argv.slice(2);
         let grade ;
 
         switch (true) {
-            case (marks>=90):
+            case (marks>=90 && marks<=100):
                 grade = "A";
                 processGrade(grade)
                 // console.log(`Your Grade is ${grade}`)
                 return grade  ;  
-                // break;
+                break;
         
-            case (marks>=80):
-                grade = "A";
+            case (marks>=80 && marks<90):
+                grade = "B";
                 processGrade(grade)
-                // break;
+                break;
         
-            case (marks>=70):
-                grade = "A";
+            case (marks>=70 && marks<=100):
+                grade = "C";
                 processGrade(grade)
-                // break;
+                break;
         
-            case (marks>=40):
-                grade = "A";
+            case (marks>=40 && marks<=100):
+                grade = "E";
                 processGrade(grade)
-                // break;
+                break;
         
             default:
                 grade = "F";
-                processGrade(grade)
-                // break;
+                processGrade(`Either enter a correct marks or you'r ${grade}`)
+                break;
 
             }
-            // console.log(`Your Grade is ${grade}`)
+            // console.log(`Y   our Grade is ${grade}`)
 
 
     }else{

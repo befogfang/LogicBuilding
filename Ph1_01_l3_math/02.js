@@ -11,12 +11,12 @@ if (numbers.length>0) {
     // console.log(nNF[1])
 
     let biggest = Number(Math.max(...nNF))  // cannt directly get all the values , need to use ...
-    console.log(biggest) //nan is number 
-    console.log(typeof(biggest)) //number
+    // console.log(biggest) //nan is number 
+    // console.log(typeof(biggest)) //number
     
     let smallest = Number(Math.min(...nNF))
-    console.log(smallest) //nan
-    console.log(typeof(smallest)) //number
+    // console.log(smallest) //nan
+    // console.log(typeof(smallest)) //number
 
     if(Number(nNF[1]) == smallest){
         console.log(`${nNF[1]} is middle digit and smallest amoung all`)
