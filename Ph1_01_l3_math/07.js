@@ -7,20 +7,12 @@
  * now here ie - 2600 - is one of case where output must be true
  */
 
-function c251(amount) {
-    //2600 = 2000 + 500 + 100
-    if (amount%100) {
-        if ((amount-(amount%500))%500) {
-            if (amount-(((amount-(amount%500))%500))%2000) {
-                console.log("true")
-            }
-        }
-    }
+const getNotes = (amt) =>{
+    if (amt<0 || (amt%100 != 0)) return null ;
+    let n2000 = Math.floor(amt/2000) ; amt%=2000;
+    let n500 = Math.floor(amt/500) ; amt%=500;
+    let n100 = Math.floor(amt/100) ;
+    return { "2000" : n2000 , "500" :n500 , "100":n100}
 }
 
-c251(2600)
-
-// console.log(4000%2000==0)
-// console.log(2600 - (2600%500))
-// console.log((3000%500))
-console.log((3000%100))
+console.log(getNotes(443400))
