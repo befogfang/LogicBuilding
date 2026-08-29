@@ -1,0 +1,19 @@
+Take coordinates (x, y) and check if the point lies on the X-axis, Y-axis, or at the origin.  
+
+Take three numbers and check if they can form a Pythagorean triplet.  
+
+Take day and month and check if it forms a valid calendar date (ignoring leap years).  
+
+Take time (hours and minutes) and print the smaller angle between the hour and minute hands.  
+
+Take three numbers and check if they are in arithmetic progression.  
+
+Take three numbers and check if they are in geometric progression.  
+
+Take a 3-digit number and check if the sum of the first and last digit equals the middle digit.  
+
+Take an integer (1–9999) and check if the sum of its digits is greater than the product of its digits.  
+
+Take two dates (day and month) and determine which one comes first in the calendar.  
+
+Take a year and print the corresponding century (e.g., "19th century", "20th century").
