@@ -4,17 +4,21 @@
  */
 
 function vowelOrConsonent(c) {
-    // check if its alphabets or not
-    // let ascii = chatCodeAt(c)
-    // console.log(ascii)
-    // if(c == 65)
-    if("A"<c && "Z" > c){
-        console.log("alphabet")
+    let vowel = ["a","e","i","o","u"]
+    let lC= c.toString().toLowerCase()
+    if(vowel.includes(lC)){
+        console.log("vowel")
+    }else if(/[/d]/){
+    console.log("digit")
+    }else if(/[^a-zA-Z/s/D]/){
+        console.log("symbol")
     }
 }
 
 vowelOrConsonent(6)
 vowelOrConsonent("b")
 vowelOrConsonent("V")
+vowelOrConsonent("e")
+vowelOrConsonent("E")
 vowelOrConsonent(".")
 vowelOrConsonent(987)
