@@ -7,14 +7,27 @@ function countTheDigit(number) {
 
 // Print the reverse of a given number.  
 function reverseNumber(number) {
-    let r = number.toString()
+    let r =parseFloat(number.toString().split('').reverse().join(''))*Math.sign(number)  //doing it using string then reversing then converitng it back to the number
     console.log(r)
 }
-reverseNumber(342342)
+// reverseNumber(-342342)
 
 // Check if a number is a palindrome.  
 
+/** number in reverse equal to the number then its a palindrome */
+let checkPalindrome =(num) =>{
+    let revNum=   parseFloat((num.toString().split('').reverse().join(''))*Math.sign(num));
+    (revNum ==num)?console.log("palindorme"):console.log("not a palindrome");
+
+}
+// checkPalindrome(23432)
+
 // Find the sum of digits of a number.  
+function sumOfDigit(num) {
+    parseFloat(
+       num.toString 
+    )
+}
 
 // Check if a number is an Armstrong number.  
 
