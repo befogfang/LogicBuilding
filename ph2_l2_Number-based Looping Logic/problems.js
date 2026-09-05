@@ -24,14 +24,37 @@ let checkPalindrome =(num) =>{
 
 // Find the sum of digits of a number.  
 function sumOfDigit(num) {
-    parseFloat(
-       num.toString 
-    )
+    let nums = num.toString().split('')
+    let sum= 0;
+    nums.forEach(n => {
+        sum += Number(n);
+    });
+    return sum;
+
 }
+// console.log(`sum of digit of number you entered is ${sumOfDigit(7688)}`)
 
 // Check if a number is an Armstrong number.  
-
+/**number that equals the sum of its own digits each raised to the power of the total number of digits
+ * 345 =3^3+4*3+5*3 if it was correct then 345 would be an armstrong number
+ */
+function checkArmstrong(num){
+    let nuLength = num.toString().length;
+    let sum =0;
+    let numArray = num.toString().split('');
+    numArray.forEach(n =>{
+        sum+=Number( Math.pow(n,nuLength))
+    })
+    console.log(sum)
+        if(sum==num){console.log("arsmtrong number")}else{console.log("not a Arsmtrong Number")}
+}
+// checkArmstrong(111)
+// checkArmstrong(153)
 // Check if a number is a perfect number.  
+/**
+ * , a perfect number is a positive integer that is equal to the sum of its positive proper divisors, that is, divisors excluding the number itself
+ */
+console.log()
 
 // Print all prime numbers between 1 and 100.  
 
