@@ -54,8 +54,31 @@ function checkArmstrong(num){
 /**
  * , a perfect number is a positive integer that is equal to the sum of its positive proper divisors, that is, divisors excluding the number itself
  */
-console.log()
+function perfectNumber(num) {
+    for(let i=1 ; i<num ; i++){
+        let dArr =[]
+        let nSum = 0;
 
+        do {
+            nSum+=i
+            dArr.push(i)
+            i++;
+        } while (num%i==0);
+
+        console.log(dArr)
+        
+        // (nSum==num)?console.log("yes"):console.log("no");
+        console.log(nSum)
+        console.log(dArr)
+
+
+
+        // console.log(dArr)
+        // console.log(nSum)
+
+    }
+}
+perfectNumber(6)
 // Print all prime numbers between 1 and 100.  
 
 // Check if a number is prime or not.  
